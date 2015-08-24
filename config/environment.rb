@@ -1,6 +1,6 @@
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'Nomakk6',
-  :password => 'sebastian1',
+  :user_name => ENV['user_name'],
+  :password => ENV['password'],
   :domain => 'groupboard.co',
   :address => 'smtp.sendgrid.net',
   :port => 587,
